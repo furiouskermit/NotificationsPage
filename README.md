@@ -28,11 +28,6 @@ Users should be able to:
 ![PC_design](./assets/images/pc_design.png)
 ![mobile_design](./assets/images/mobile_design.png)
 
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
 ## My process
 
 ### Built with
