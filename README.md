@@ -39,7 +39,7 @@ Users should be able to:
 
 ### What I learned
 
-When I press the tab button, the notification lists are not focused. <li></li> tags don't have focus function, so I changed them as <a></a> to make them focus.
+When I press the tab button, the notification lists are not focused. li tags don't have focus function, so I changed them into a tags to make them focus.
 
 ## Author
 
