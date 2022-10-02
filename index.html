@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications Page</title>
+
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="noti-wrap">
+        <div class="noti-inner">
+          <div class="noti-title">
+            <h1 class="notification">Notifications<span class="noti-num">0</span></h1>
+            <button type="button" id="btnReadAll">Mark all as read</button>
+          </div>
+          <div class="noti-content">
+            <a href="#none" class="noti-item markRead">
+              <div class="noti-item-left">
+                <img src="assets/images/avatar-mark-webber.webp" alt="userProfile" class="noti-user-profile">
+              </div>
+              <div class="noti-item-right">
+                <div class="noti-text">
+                  <p class="noti-text-title">
+                    <em class="noti-user-name">Mark Webber</em> reacted to your recent post <em class="noti-board-title">My first tournament today!</em>
+                  </p>
+                  <span class="noti-mark-read"></span>
+                </div>
+                <div class="noti-date">1m ago</div>
+              </div>
+            </a>
+            <a href="#none" class="noti-item markRead">
+              <div class="noti-item-left">
+                <img src="assets/images/avatar-angela-gray.webp" alt="userProfile" class="noti-user-profile">
+              </div>
+              <div class="noti-item-right">
+                <div class="noti-text">
+                  <p class="noti-text-title">
+                    <em class="noti-user-name">Angela Gray</em> followed you
+                  </p>
+                  <span class="noti-mark-read"></span>
+                </div>
+                <div class="noti-date">5m ago</div>
+              </div>
+            </a>
+            <a href="#none" class="noti-item markRead">
+              <div class="noti-item-left">
+                <img src="assets/images/avatar-jacob-thompson.webp" alt="userProfile" class="noti-user-profile">
+              </div>
+              <div class="noti-item-right">
+                <div class="noti-text">
+                  <p class="noti-text-title">
+                    <em class="noti-user-name">Jacob Thompson</em> has joined your group <em class="noti-group-title">Chess Club</em>
+                  </p>
+                  <span class="noti-mark-read"></span>
+                </div>
+                <div class="noti-date">1 day ago</div>
+              </div>
+            </a>
+            <a href="#none" class="noti-item">
+              <div class="noti-item-left">
+                <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="userProfile" class="noti-user-profile">
+              </div>
+              <div class="noti-item-right">
+                <div class="noti-text">
+                  <p class="noti-text-title">
+                    <em class="noti-user-name">Rizky Hasanuddin</em> sent you a private message
+                  </p>
+                  <span class="noti-mark-read d-none"></span>
+                </div>
+                <div class="noti-date">5 days ago</div>
+                <div class="noti-message">
+                  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
+                </div>
+              </div>
+            </a>
+            <a href="#none" class="noti-item">
+              <div class="noti-item-left">
+                <img src="assets/images/avatar-kimberly-smith.webp" alt="userProfile" class="noti-user-profile">
+              </div>
+              <div class="noti-item-right">
+                <div class="noti-text">
+                  <p class="noti-text-title">
+                    <em class="noti-user-name">Kimberly Smith</em> commented on your picture
+                  </p>
+                  <span class="noti-mark-read d-none"></span>
+                </div>
+                <div class="noti-date">1 week ago</div>
+              </div>
+              <div class="noti-img"><img src="assets/images/image-chess.webp" alt="notification-preview-image" class="noti-img-thumb"></div>
+            </a>
+            <a href="#none" class="noti-item">
+              <div class="noti-item-left">
+                <img src="assets/images/avatar-nathan-peterson.webp" alt="userProfile" class="noti-user-profile">
+              </div>
+              <div class="noti-item-right">
+                <div class="noti-text">
+                  <p class="noti-text-title">
+                    <em class="noti-user-name">Nathan Peterson</em> reacted to your recent post <em class="noti-board-title">5 end-game strategies to increase your win reate</em>
+                  </p>
+                  <span class="noti-mark-read d-none"></span>
+                </div>
+                <div class="noti-date">2 weeks ago</div>
+              </div>
+            </a>
+            <a href="#none" class="noti-item">
+              <div class="noti-item-left">
+                <img src="assets/images/avatar-anna-kim.webp" alt="userProfile" class="noti-user-profile">
+              </div>
+              <div class="noti-item-right">
+                <div class="noti-text">
+                  <p class="noti-text-title">
+                    <em class="noti-user-name">Anna Kim</em> left the group <em class="noti-group-title">Chess Club</em>
+                  </p>
+                  <span class="noti-mark-read d-none"></span>
+                </div>
+                <div class="noti-date">2 weeks ago</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="freepik-attribute">
+      Image by <a href="https://www.freepik.com/free-vector/flat-abstract-wireframe-background_15441828.htm#query=geometric&position=25&from_view=keyword">Freepik</a>
+    </div>
+
+    <!-- js -->
+    <script src="js/custom.js"></script>
+  </body>
+</html>
